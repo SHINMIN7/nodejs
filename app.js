@@ -4,6 +4,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const errorController = require('./controllers/error');
+const db = require('./util/database');
+
+//query보다 excute가 더 안전
+db.execute('SELECT * FROM products')
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 const app = express();
 
