@@ -9,7 +9,7 @@ const db = require('./util/database');
 //query보다 excute가 더 안전
 db.execute('SELECT * FROM products')
   .then((result) => {
-    console.log(result);
+    console.log(result[0], result[1]);
   })
   .catch((err) => {
     console.log(err);

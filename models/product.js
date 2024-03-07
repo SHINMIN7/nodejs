@@ -1,16 +1,16 @@
 //파일에서 데이터를 읽어올 경우에만 사용
-//const fs = require('fs');
-//const path = require('path');
+// const fs = require('fs');
+// const path = require('path');
 
 const db = require('../util/database');
 
 const Cart = require('./cart');
 
-const p = path.join(
-  path.dirname(process.mainModule.filename),
-  'data',
-  'products.json'
-);
+// const p = path.join(
+//   path.dirname(process.mainModule.filename),
+//   'data',
+//   'products.json'
+// );
 
 //파일에서 제품을 가져오는 헬퍼 함수
 // const getProductsFromFile = (cb) => {
